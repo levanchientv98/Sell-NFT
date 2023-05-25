@@ -8,7 +8,7 @@ const StyledButton = styled.button`
     props.borderColor ? `1px solid ${props.borderColor}` : "none"};
   border-radius: ${(props) => props.borderRadius};
   background: ${(props) => props.bgColor};
-  font-weight: 500;
+  font-weight: ${(props) => props.fontWeight};
   line-height: 21px;
   color: ${(props) => props.textColor};
   color: ${(props) => props.fontSize};
@@ -26,6 +26,7 @@ export const Button = ({
   fontSize,
   borderRadius,
   children,
+  fontWeight,
   ...rest
 }) => {
   return (
@@ -38,6 +39,7 @@ export const Button = ({
       borderColor={borderColor}
       fontSize={fontSize}
       borderRadius={borderRadius}
+      fontWeight={fontWeight}
       {...rest}
     >
       {percent && (

@@ -15,7 +15,7 @@ import arrowRight from "image/arrowRight.svg";
 import { NavLink } from "react-router-dom";
 const StyledSideBar = styled.div`
   background-color: white;
-  height: 100vh;
+  height: auto;
   padding: 32px;
   .logo {
     display: flex;
@@ -64,7 +64,7 @@ const CardInSideBar = styled.div`
   justify-content: center;
   align-items: center;
   padding: 24px;
-  margin-top: 50px;
+  margin-top: 33vh;
   background: linear-gradient(228.89deg, #5429ff 1.12%, #bbaaff 100%);
   border-radius: 16px;
   width: 80%;
