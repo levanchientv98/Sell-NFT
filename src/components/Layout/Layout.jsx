@@ -4,7 +4,7 @@ import { SideBar } from "components/SideBar";
 
 const LayoutStyled = styled.div`
   background-color: #caeae6;
-  min-height: 150vh;
+  min-height: 160vh;
   .right {
     float: right;
     width: 80%;
@@ -16,7 +16,9 @@ const ContentStyled = styled.div`
 `;
 const SideBarStyled = styled.div`
   float: left;
+  position: fixed;
   width: 20%;
+  height: 100vh;
 `;
 
 const PrimaryLayout = ({ children }) => {

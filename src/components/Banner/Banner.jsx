@@ -6,6 +6,7 @@ import { Button } from "components/Button";
 
 const BannerStyled = styled.div`
   display: flex;
+  flex-direction: column;
   padding-left: 32px;
   width: 58%;
 
@@ -20,9 +21,9 @@ const BannerStyled = styled.div`
     flex-direction: column;
     justify-content: center;
     border-radius: 12px;
-    width: 716px;
-    height: 355px;
-    background-size: cover;
+    width: 100%;
+    height: 354px;
+    background-repeat:no-repeat;
     background: linear-gradient(
         75.33deg,
         rgba(0, 0, 0, 0.2) -10.41%,
@@ -58,7 +59,7 @@ const BannerStyled = styled.div`
   } */
 `;
 
-export const Banner = () => {
+export const Banner = ({ children }) => {
   return (
     <BannerStyled>
       <div className="banner-style">
@@ -84,6 +85,7 @@ export const Banner = () => {
           </Button>
         </div>
       </div>
+      {children}
     </BannerStyled>
   );
 };

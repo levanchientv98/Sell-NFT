@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Button } from "components/Button";
 import ethIcon from "assets/eth-blue.svg";
 const StyledCard = styled.div`
-  padding: 24px;
+  padding: 15px;
   background-color: white;
   border-radius: 20px;
   font-size: 12px;
