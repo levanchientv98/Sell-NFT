@@ -7,13 +7,11 @@ import Monkey3 from "image/Monkey3.svg";
 import Tibao from "image/Ellipse 6 (1).svg";
 import Alisson from "image/Ellipse 6 (4).svg";
 
-
 import { CardNFT } from "components/CardNFT";
 
 import { PrimaryLayout } from "components/Layout";
 import { Banner } from "components/Banner";
 import { TopCreator } from "components/TopCreator";
-
 
 const AppWrapper = styled.div`
   text-align: center;
@@ -47,64 +45,89 @@ const AppWrapper = styled.div`
     display: flex;
     flex-direction: column;
   }
-  .title-container h3{
+  .title-container h3 {
     font-family: "DM Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
-    color-scheme: #27262E;
-
+    color-scheme: #27262e;
   }
-  .category{
-    display:flex;
-    flex-direction:row;
+  .category {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 24px;
   }
 
-  .category p{
+  .category p {
     font-family: "DM Sans", sans-serif;
     font-weight: 500;
-    font-size: 14px;  
-    color: #7A797D; 
+    font-size: 14px;
+    color: #7a797d;
   }
 
-  .title-styled{
+  .title-styled {
     display: flex;
     flex-direction: row;
-    padding-left:32px;
+    padding-left: 32px;
     justify-content: space-between;
   }
-  
-  .card-container{
+
+  .card-container {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 15px;
+    gap: 20px;
   }
-
-
 `;
-
 
 const Home = () => {
   return (
     <PrimaryLayout>
       <AppWrapper>
-        <Banner >
+        <Banner>
           <div className="title-container">
-            <div className="title-styled"><h3>Trending Auctions</h3>
+            <div className="title-styled">
+              <h3>Trending Auctions</h3>
               <div className="category">
                 <p>Art</p>
                 <p>Music</p>
                 <p>Collectibles</p>
                 <p>Utility</p>
-              </div></div>
-            <div className="card-container">
-              <CardNFT title={"Ape In Love"} avatarAuthor={Tibao} img={Monkey1} idAuthor={"@johnti60"} likes={"21.5k"} currentBid={"9.10"}></CardNFT>
-              <CardNFT title={"Smilling Ape"} avatarAuthor={Alisson} img={Monkey3} idAuthor={"@m_alisson"} likes={"21.5k"} currentBid={"6.12"}></CardNFT>
-              <CardNFT title={"Ape In Love"} avatarAuthor={Tibao} img={Monkey1} idAuthor={"@johnti60"} likes={"21.5k"} currentBid={"9.10"}></CardNFT>
-              <CardNFT title={"Smilling Ape"} avatarAuthor={Alisson} img={Monkey3} idAuthor={"@m_alisson"} likes={"21.5k"} currentBid={"6.12"}></CardNFT>
+              </div>
             </div>
-
+            <div className="card-container">
+              <CardNFT
+                title={"Ape In Love"}
+                avatarAuthor={Tibao}
+                img={Monkey1}
+                idAuthor={"@johnti60"}
+                likes={"21.5k"}
+                currentBid={"9.10"}
+              ></CardNFT>
+              <CardNFT
+                title={"Smilling Ape"}
+                avatarAuthor={Alisson}
+                img={Monkey3}
+                idAuthor={"@m_alisson"}
+                likes={"21.5k"}
+                currentBid={"6.12"}
+              ></CardNFT>
+              <CardNFT
+                title={"Ape In Love"}
+                avatarAuthor={Tibao}
+                img={Monkey1}
+                idAuthor={"@johnti60"}
+                likes={"21.5k"}
+                currentBid={"9.10"}
+              ></CardNFT>
+              <CardNFT
+                title={"Smilling Ape"}
+                avatarAuthor={Alisson}
+                img={Monkey3}
+                idAuthor={"@m_alisson"}
+                likes={"21.5k"}
+                currentBid={"6.12"}
+              ></CardNFT>
+            </div>
           </div>
         </Banner>
         <div className="card-wrapper">
@@ -113,7 +136,6 @@ const Home = () => {
           <Card title={"ROI"} content="+14.02" percent={-5.1}></Card>
           <Card title={"Estimated"} amount="7.00" percent={3.2}></Card>
           <TopCreator></TopCreator>
-
         </div>
       </AppWrapper>
     </PrimaryLayout>
