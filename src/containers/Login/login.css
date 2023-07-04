@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+    font-family: "Poppins", sans-serif;
+}
